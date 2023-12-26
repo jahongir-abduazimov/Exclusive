@@ -1255,4 +1255,73 @@ footer .footer__bottom {
   text-align: center;
   color: rgba(255, 255, 255, 0.2901960784);
   padding-top: 16px;
+}
+
+#signUp-section {
+  padding: 60px 0 140px 0;
+}
+#signUp-section .signUp__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#signUp-section .signUp__wrapper--left img {
+  position: relative;
+  right: 200px;
+}
+#signUp-section .signUp__wrapper--right {
+  width: 371px;
+}
+#signUp-section .signUp__wrapper--right h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+#signUp-section .signUp__wrapper--right p {
+  margin-bottom: 48px;
+}
+#signUp-section .signUp__wrapper--right form {
+  margin-bottom: 16px;
+}
+#signUp-section .signUp__wrapper--right form input {
+  width: 100%;
+  padding-bottom: 8px;
+  margin-bottom: 48px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2588235294);
+}
+#signUp-section .signUp__wrapper--right form button {
+  width: 100%;
+  padding: 16px 0;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #fafafa;
+  cursor: pointer;
+}
+#signUp-section .signUp__wrapper--right > button {
+  width: 100%;
+  padding: 16px 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2549019608);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+#signUp-section .signUp__wrapper--right .goLogin {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+#signUp-section .signUp__wrapper--right .goLogin p {
+  opacity: 0.7;
+}
+#signUp-section .signUp__wrapper--right .goLogin a {
+  color: #000;
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */
