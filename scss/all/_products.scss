@@ -1,0 +1,94 @@
+#products {
+    padding-bottom: 100px;
+    .products__icon {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-weight: 600;
+        color: var(--button-color);
+        margin-bottom: 24px;
+    }
+    .products__title {
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 60px;
+    }
+    .products__cards__wrapper {
+        margin-bottom: 60px;
+        display:flex;
+        gap: 30px;
+        
+        .products__card {
+            width: 270px;
+            // display: inline-block;
+            .products__card--top {
+                position: relative;
+                margin-bottom: 16px;
+                background-color: #F5F5F5;
+                border-radius: 4px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 250px;
+                .card__btn {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 10px 0;
+                    width: 100%;
+                    background-color: #000;
+                    border-radius: 0 0 4px 4px;
+                    color: #F5F5F5;
+                    cursor: pointer;
+                }
+                .products__free {
+                    position: absolute;
+                    padding: 6px 12px;
+                    background-color: var(--button-color);
+                    border-radius: 4px;
+                    top: 12px;
+                    left: 12px;
+                    color: #fafafa;
+                }
+                .products__card--like {
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    img {
+                        padding: 5px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .products__card--bottom {
+                h5 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    padding-bottom: 8px;
+                }
+                > p {
+                    color: var(--button-color);
+                    font-weight: 500;
+                    display: inline;
+                    padding-right: 12px;
+                    font-weight: 500;
+                }
+                span {
+                    font-weight: 500;
+                    opacity: 0.5;
+                    text-decoration: line-through;
+                    
+                }
+                img {
+                    padding-top: 8px;
+                }
+            }
+        }
+    }
+}

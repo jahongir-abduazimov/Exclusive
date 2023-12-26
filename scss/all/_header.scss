@@ -1,0 +1,85 @@
+header {
+    border-bottom: rgba(0, 0, 0, 0.3) solid 1px;
+    padding-bottom: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+    #header-top {
+        background-color: #000;
+        .header__top--title {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            justify-content: end;
+            p {
+                color:#FAFAFA;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                padding-right: 10px;
+            }
+            div {
+                display: flex;
+                gap: 231px;
+                a {
+                    color: #FAFAFA;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                select {
+                    background-color: transparent;
+                    color: #FAFAFA;
+                    border: none;
+                }
+            }
+        }
+    }
+    #header-bottom {
+        .header-bottom{
+            padding-top: 40px;
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    gap: 48px;
+                    align-items: center;
+                    >a {
+                        font-family: Inter;
+                        font-size: 24px;
+                        font-weight: 700;
+                        text-decoration: none;
+                        margin-right: 140px;
+                        color: #000000;
+                    }
+                    .active {
+                        border-bottom: #000 solid 1px;
+                    }
+                    li{
+                        list-style-type: none;
+                        a{
+                            text-decoration: none;
+                            color: #000;
+                        }
+                    }
+                }
+                div {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    input {
+                        padding: 15px 20px;
+                        border: none;
+                        background-color: #F5F5F5;
+                        font-size: 12px;
+                        width: 243px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
