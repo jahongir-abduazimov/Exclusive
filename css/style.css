@@ -343,6 +343,11 @@ body {
   src: url(../assets/fonts/inter/Inter-SemiBold.ttf);
   font-weight: 600;
 }
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/inter/Inter-Bold.ttf);
+  font-weight: 700;
+}
 :root {
   --button-color: #DB4444 ;
 }
@@ -1257,6 +1262,62 @@ footer .footer__bottom {
   padding-top: 16px;
 }
 
+#login-section {
+  padding: 60px 0 140px 0;
+}
+#login-section .login__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#login-section .login__wrapper--left img {
+  position: relative;
+  right: 200px;
+}
+#login-section .login__wrapper--right {
+  width: 371px;
+}
+#login-section .login__wrapper--right h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+#login-section .login__wrapper--right p {
+  margin-bottom: 48px;
+}
+#login-section .login__wrapper--right form {
+  margin-bottom: 16px;
+}
+#login-section .login__wrapper--right form input {
+  width: 100%;
+  padding-bottom: 8px;
+  margin-bottom: 48px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2588235294);
+}
+#login-section .login__wrapper--right form .log {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#login-section .login__wrapper--right form .log a {
+  text-decoration: none;
+  color: var(--button-color);
+}
+#login-section .login__wrapper--right form button {
+  padding: 16px 48px;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #fafafa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#login-section .login__wrapper--right form button:hover {
+  background-color: #E07575;
+}
+
 #signUp-section {
   padding: 60px 0 140px 0;
 }
@@ -1299,6 +1360,10 @@ footer .footer__bottom {
   font-weight: 500;
   color: #fafafa;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+#signUp-section .signUp__wrapper--right form button:hover {
+  background-color: #E07575;
 }
 #signUp-section .signUp__wrapper--right > button {
   width: 100%;
@@ -1312,6 +1377,10 @@ footer .footer__bottom {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 32px;
+  transition: all 0.2s ease;
+}
+#signUp-section .signUp__wrapper--right > button:hover {
+  opacity: 0.6;
 }
 #signUp-section .signUp__wrapper--right .goLogin {
   display: flex;
