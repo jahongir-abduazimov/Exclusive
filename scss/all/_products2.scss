@@ -96,15 +96,9 @@
         }
     }
     .products2__btn {
-        padding: 16px 48px;
-        background-color: var(--button-color);
-        color: #F5F5F5;
-        border: none;
-        cursor: pointer;
-        border-radius: 4px;
+        @extend %button;
         display: block;
         margin: 0 auto;
-        transition: all 0.2s ease;
         &:hover {
             background-color: #E07575;
         }

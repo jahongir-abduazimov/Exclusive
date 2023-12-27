@@ -352,6 +352,16 @@ body {
   --button-color: #DB4444 ;
 }
 
+#foryou .foryou__title button, #wishlist .wishlist__title button, #login-section .login__wrapper--right form button, #products2 .products2__btn, #sales .sales__btn {
+  padding: 16px 48px;
+  background-color: var(--button-color);
+  color: #F5F5F5;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -440,6 +450,52 @@ header #header-bottom .header-bottom nav div input {
   font-size: 12px;
   width: 243px;
   border-radius: 4px;
+}
+header #header-bottom .header-bottom nav div .dropbtn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+header #header-bottom .header-bottom nav div .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header #header-bottom .header-bottom nav div .dropdown-content {
+  display: none;
+  position: absolute;
+  left: -180px;
+  top: 30px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.365);
+  -webkit-backdrop-filter: blur(75px);
+          backdrop-filter: blur(75px);
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+header #header-bottom .header-bottom nav div .dropdown-content a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  height: 40px;
+}
+header #header-bottom .header-bottom nav div .dropdown-content a:hover {
+  background-color: rgba(245, 245, 245, 0.1764705882);
+}
+header #header-bottom .header-bottom nav div .dropdown-content .user-icn {
+  position: relative;
+  right: 5px;
+}
+header #header-bottom .header-bottom nav div .dropdown-content p {
+  color: #fafafa;
+  text-decoration: none;
+}
+header #header-bottom .header-bottom nav div .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 main .goUp {
@@ -623,15 +679,8 @@ main .goUp {
   padding-top: 8px;
 }
 #sales .sales__btn {
-  padding: 16px 48px;
-  background-color: var(--button-color);
-  color: #F5F5F5;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
   display: block;
   margin: 0 auto;
-  transition: all 0.2s ease;
 }
 #sales .sales__btn:hover {
   background-color: #E07575;
@@ -933,15 +982,8 @@ main .goUp {
   align-items: center;
 }
 #products2 .products2__btn {
-  padding: 16px 48px;
-  background-color: var(--button-color);
-  color: #F5F5F5;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
   display: block;
   margin: 0 auto;
-  transition: all 0.2s ease;
 }
 #products2 .products2__btn:hover {
   background-color: #E07575;
@@ -1290,7 +1332,7 @@ footer .footer__bottom {
 }
 #login-section .login__wrapper--right form input {
   width: 100%;
-  padding-bottom: 8px;
+  padding: 7px;
   margin-bottom: 48px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2588235294);
@@ -1303,16 +1345,6 @@ footer .footer__bottom {
 #login-section .login__wrapper--right form .log a {
   text-decoration: none;
   color: var(--button-color);
-}
-#login-section .login__wrapper--right form button {
-  padding: 16px 48px;
-  background-color: var(--button-color);
-  border: none;
-  border-radius: 4px;
-  font-weight: 500;
-  color: #fafafa;
-  cursor: pointer;
-  transition: all 0.2s ease;
 }
 #login-section .login__wrapper--right form button:hover {
   background-color: #E07575;
@@ -1346,7 +1378,7 @@ footer .footer__bottom {
 }
 #signUp-section .signUp__wrapper--right form input {
   width: 100%;
-  padding-bottom: 8px;
+  padding: 7px;
   margin-bottom: 48px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2588235294);
@@ -1393,4 +1425,230 @@ footer .footer__bottom {
 #signUp-section .signUp__wrapper--right .goLogin a {
   color: #000;
   opacity: 0.7;
+}
+
+#wishlist {
+  padding: 80px 0;
+}
+#wishlist .wishlist__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#wishlist .wishlist__title p {
+  font-size: 20px;
+}
+#wishlist .wishlist__title button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+#wishlist .wishlist__title button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+#wishlist .sales__cards__wrapper {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+}
+#wishlist .sales__cards__wrapper .sales__card {
+  width: 270px;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--top {
+  position: relative;
+  margin-bottom: 16px;
+  width: 270px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--top .card__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  padding: 7px 0;
+  border: none;
+  width: 100%;
+  background-color: #000;
+  border-radius: 0 0 4px 4px;
+  color: #F5F5F5;
+  cursor: pointer;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--top .sales__free {
+  position: absolute;
+  padding: 6px 12px;
+  background-color: var(--button-color);
+  border-radius: 4px;
+  top: 12px;
+  left: 12px;
+  color: #fafafa;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--top .sales__card--like {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--top .sales__card--like img {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--bottom h5 {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--bottom > p {
+  color: var(--button-color);
+  font-weight: 500;
+  display: inline;
+  padding-right: 12px;
+  font-weight: 500;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--bottom span {
+  font-weight: 500;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+#wishlist .sales__cards__wrapper .sales__card .sales__card--bottom img {
+  padding-top: 8px;
+}
+#wishlist ::-webkit-scrollbar {
+  display: none;
+}
+
+#foryou {
+  padding-bottom: 140px;
+}
+#foryou .foryou__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#foryou .foryou__title-icon {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+#foryou .foryou__title-icon div {
+  width: 20px;
+  height: 40px;
+  background-color: var(--button-color);
+  border-radius: 4px;
+}
+#foryou .foryou__title-icon p {
+  font-size: 20px;
+}
+#foryou .foryou__title button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+#foryou .foryou__title button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+#foryou .sales__cards__wrapper {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+}
+#foryou .sales__cards__wrapper .sales__card {
+  width: 270px;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--top {
+  position: relative;
+  margin-bottom: 16px;
+  width: 270px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--top .card__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  padding: 7px 0;
+  border: none;
+  width: 100%;
+  background-color: #000;
+  border-radius: 0 0 4px 4px;
+  color: #F5F5F5;
+  cursor: pointer;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--top .sales__free {
+  position: absolute;
+  padding: 6px 12px;
+  background-color: var(--button-color);
+  border-radius: 4px;
+  top: 12px;
+  left: 12px;
+  color: #fafafa;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--top .sales__new {
+  position: absolute;
+  padding: 6px 12px;
+  background-color: #00FF66;
+  border-radius: 4px;
+  top: 12px;
+  left: 12px;
+  color: #fafafa;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--top .sales__card--like {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--top .sales__card--like img {
+  padding: 8px 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--bottom h5 {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--bottom > p {
+  color: var(--button-color);
+  font-weight: 500;
+  display: inline;
+  padding-right: 12px;
+  font-weight: 500;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--bottom span {
+  font-weight: 500;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+#foryou .sales__cards__wrapper .sales__card .sales__card--bottom img {
+  padding-top: 8px;
+}
+#foryou ::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
