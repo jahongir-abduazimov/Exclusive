@@ -352,7 +352,7 @@ body {
   --button-color: #DB4444 ;
 }
 
-#foryou .foryou__title button, #wishlist .wishlist__title button, #product .product__wrapper--right .product__buttons .product__buy, #login-section .login__wrapper--right form button, #cart .cart__apply--right button, #cart .cart__apply--left button, #cart .cart__buttons button, #products2 .products2__btn, #sales .sales__btn {
+#foryou .foryou__title button, #wishlist .wishlist__title button, #product .product__wrapper--right .product__buttons .product__buy, #login-section .login__wrapper--right form button, #details .details__wrapper--right-button button, #details .details__wrapper--right-buttons button, #details .details__wrapper--right-top .details__apply--right button, #cart .cart__apply--right button, #cart .cart__apply--left button, #cart .cart__buttons button, #products2 .products2__btn, #sales .sales__btn {
   padding: 16px 48px;
   background-color: var(--button-color);
   color: #F5F5F5;
@@ -1417,6 +1417,140 @@ footer .footer__bottom {
   margin: 0 auto;
 }
 #cart .cart__apply--right button:hover {
+  background-color: #E07575;
+}
+
+#details {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+#details .details__title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+#details .details__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#details .details__wrapper--inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+#details .details__wrapper--inputs .address__input label {
+  margin-bottom: 8px;
+  color: #000;
+  opacity: 0.4;
+  display: block;
+}
+#details .details__wrapper--inputs .address__input input {
+  width: 470px;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+}
+#details .details__wrapper--inputs .checkbox__input {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#details .details__wrapper--inputs .checkbox__input input {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#details .details__wrapper--right {
+  width: 527px;
+}
+#details .details__wrapper--right-top {
+  width: 425px;
+}
+#details .details__wrapper--right-top .details__products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+#details .details__wrapper--right-top .details__products div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#details .details__wrapper--right-top .details__apply--right .details__apply--right-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3137254902);
+}
+#details .details__wrapper--right-top .details__apply--right .details__apply--right-info2 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+#details .details__wrapper--right-top .details__apply--right a {
+  color: #fafafa;
+  text-decoration: none;
+}
+#details .details__wrapper--right-top .details__apply--right button {
+  display: block;
+  margin: 0 auto;
+}
+#details .details__wrapper--right-top .details__apply--right button:hover {
+  background-color: #E07575;
+}
+#details .details__wrapper--right-top .details__payment {
+  margin-bottom: 32px;
+}
+#details .details__wrapper--right-top .details__payment-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+#details .details__wrapper--right-top .details__payment-top .input {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#details .details__wrapper--right-top .details__payment-top .input input {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#details .details__wrapper--right-top .details__payment-top .card-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#details .details__wrapper--right-top .details__payment-bottom {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#details .details__wrapper--right-top .details__payment-bottom input {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#details .details__wrapper--right-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+#details .details__wrapper--right-buttons input {
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.3176470588);
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+#details .details__wrapper--right-buttons button:hover {
+  background-color: #E07575;
+}
+#details .details__wrapper--right-button button:hover {
   background-color: #E07575;
 }
 

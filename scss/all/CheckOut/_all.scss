@@ -1,0 +1,147 @@
+#details {
+    padding-top: 80px;
+    padding-bottom: 140px;
+    .details__title {
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 48px;
+    }
+    .details__wrapper {
+        display: flex;
+        justify-content: space-between;
+        &--inputs {
+            display: flex;
+            flex-direction: column;
+            row-gap: 32px;
+            .address__input {
+                label {
+                    margin-bottom: 8px;
+                    color: #000;
+                    opacity: 0.4;
+                    display: block;
+                }
+                input {
+                    width: 470px;
+                    height: 50px;
+                    padding: 15px;
+                    border: none;
+                    background-color: #F5F5F5;
+                    border-radius: 4px;
+                }
+            }
+            .checkbox__input {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                input {
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                }
+            }
+        }
+        &--right {
+            width: 527px;
+            &-top {
+                width: 425px;
+                .details__products {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 32px;
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                    }
+                }
+                .details__apply--right {
+                    .details__apply--right-info {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 16px;
+                        margin-bottom: 16px;
+                        border-bottom: 1px solid #00000050;
+                    }
+                    .details__apply--right-info2 {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 16px;
+                        margin-bottom: 16px;
+                    }
+                    a {
+                        color: #fafafa;
+                        text-decoration: none;
+                    }
+                    button {
+                        @extend %button;
+                        display: block;
+                        margin: 0 auto;
+                        
+                        &:hover {
+                            background-color: #E07575;
+                        }
+                    }
+                }
+                .details__payment {
+                    margin-bottom: 32px;
+                    &-top {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 32px;
+                        .input {
+                            input {
+                                width: 24px;
+                                height: 24px;
+                                cursor: pointer;
+                            }
+                            display: flex;
+                            align-items: center;
+                            gap: 16px;
+                        }
+                        .card-logo {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                        }
+                    }
+                    &-bottom {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                        input {
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &-buttons {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 32px;
+                input {
+                    width: 300px;
+                    border: 1px solid #00000051;
+                    padding: 16px 24px;
+                    border-radius: 4px;
+                }
+                button {
+                    @extend %button;
+                    &:hover {
+                        background-color: #E07575;
+                    }
+                }
+            }
+            &-button {
+                button {
+                    @extend %button;
+                    &:hover {
+                        background-color: #E07575;
+                    }
+                }
+            }
+        }
+    }
+}
