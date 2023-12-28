@@ -352,7 +352,7 @@ body {
   --button-color: #DB4444 ;
 }
 
-#foryou .foryou__title button, #wishlist .wishlist__title button, #product .product__wrapper--right .product__buttons .product__buy, #login-section .login__wrapper--right form button, #details .details__wrapper--right-button button, #details .details__wrapper--right-buttons button, #details .details__wrapper--right-top .details__apply--right button, #cart .cart__apply--right button, #cart .cart__apply--left button, #cart .cart__buttons button, #products2 .products2__btn, #sales .sales__btn {
+#foryou .foryou__title button, #wishlist .wishlist__title button, #product .product__wrapper--right .product__buttons .product__buy, #login-section .login__wrapper--right form button, #details .details__wrapper--right-button button, #details .details__wrapper--right-buttons button, #details .details__wrapper--right-top .details__apply--right button, #cart .cart__apply--right button, #cart .cart__apply--left button, #cart .cart__buttons button, #account .account__wrapper--right .account__button button, #products2 .products2__btn, #sales .sales__btn {
   padding: 16px 48px;
   background-color: var(--button-color);
   color: #F5F5F5;
@@ -1302,6 +1302,85 @@ footer .footer__bottom {
   text-align: center;
   color: rgba(255, 255, 255, 0.2901960784);
   padding-top: 16px;
+}
+
+#account {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+#account .account__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#account .account__wrapper--left {
+  width: 200px;
+}
+#account .account__wrapper--left > div {
+  margin-bottom: 24px;
+}
+#account .account__wrapper--left > div h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+#account .account__wrapper--left > div div {
+  padding-left: 30px;
+}
+#account .account__wrapper--left > div div .red {
+  color: var(--button-color);
+}
+#account .account__wrapper--left > div div p {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}
+#account .account__wrapper--right {
+  width: 870px;
+  padding: 40px 80px;
+}
+#account .account__wrapper--right-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--button-color);
+  margin-bottom: 16px;
+}
+#account .account__wrapper--right .account__information--input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#account .account__wrapper--right .account__information--input label {
+  display: block;
+  margin-bottom: 8px;
+}
+#account .account__wrapper--right .account__information--input input {
+  margin-bottom: 24px;
+  width: 330px;
+  padding: 13px 16px;
+  border: none;
+  background-color: #F5F5F5;
+}
+#account .account__wrapper--right .account__password p {
+  margin-bottom: 8px;
+}
+#account .account__wrapper--right .account__password input {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  background-color: #F5F5F5;
+}
+#account .account__wrapper--right .account__button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 32px;
+}
+#account .account__wrapper--right .account__button p {
+  cursor: pointer;
+}
+#account .account__wrapper--right .account__button button:hover {
+  background-color: #E07575;
 }
 
 #cart {
