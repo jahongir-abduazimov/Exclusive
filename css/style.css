@@ -374,7 +374,7 @@ header {
   padding-bottom: 18px;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   background-color: #fff;
 }
 header #header-top {
@@ -1376,8 +1376,14 @@ footer .footer__bottom {
   align-items: center;
   gap: 32px;
 }
-#account .account__wrapper--right .account__button p {
-  cursor: pointer;
+#account .account__wrapper--right .account__button .account__btn1 {
+  background-color: transparent;
+  color: #000;
+  padding: 0;
+}
+#account .account__wrapper--right .account__button .account__btn1:hover {
+  opacity: 0.5;
+  background-color: transparent;
 }
 #account .account__wrapper--right .account__button button:hover {
   background-color: #E07575;
