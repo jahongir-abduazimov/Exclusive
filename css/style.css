@@ -72,8 +72,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -467,8 +466,7 @@ header #header-bottom .header-bottom nav div .dropdown-content {
   top: 30px;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.365);
-  -webkit-backdrop-filter: blur(75px);
-          backdrop-filter: blur(75px);
+  backdrop-filter: blur(75px);
   min-width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -585,8 +583,7 @@ main .goUp {
 }
 #sales .sales__time {
   display: flex;
-  -moz-column-gap: 37px;
-       column-gap: 37px;
+  column-gap: 37px;
   align-items: end;
   margin-bottom: 40px;
 }
